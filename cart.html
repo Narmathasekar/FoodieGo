@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Your Cart | FoodieGo</title>
+        <base href="/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="cart">
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container py-2"><a class="navbar-brand brand" href="index.html">Foodie<span>Go</span></a>
+            <div class="ms-auto"><a href="menu.html" class="btn btn-outline-brand btn-sm me-3">Keep browsing</a><a
+                    href="cart.html" class="position-relative"><i class="bi bi-bag fs-5"></i><span
+                        class="cart-count position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark">0</span></a>
+            </div>
+        </div>
+    </nav>
+    <main class="section-pad">
+        <div class="container">
+            <div class="eyebrow">Almost there</div>
+            <h1 class="display-4 mb-5">Your cart</h1>
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <div id="cart-items"></div>
+                    <form id="coupon-form" class="d-flex gap-2 mt-4"><input id="coupon" class="form-control"
+                            placeholder="Enter coupon code" aria-label="Coupon code"><button
+                            class="btn btn-outline-brand" type="submit">Apply</button></form>
+                    <div id="coupon-message"></div>
+                </div>
+                <div class="col-lg-5">
+                    <div id="cart-summary" class="summary-box"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
